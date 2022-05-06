@@ -1,0 +1,166 @@
+.contenedor {
+    position: relative;
+    margin-top: 3%;
+    margin-left: 20%;
+    height: 70vh;
+    width: 125vh;   
+    background-color: transparent;
+}
+
+.portal {
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.portal:nth-child(4){
+    background-color: black;
+    left: 0;
+    top: 0;
+    animation: flotar 11s infinite linear;
+    animation-direction: reverse;
+    box-shadow: 0 0 10px rgb(116, 241, 235),
+                0 0 20px rgb(116, 241, 235),
+                0 0 40px rgb(116, 241, 235),
+                0 0 60px rgb(116, 241, 235),
+                0 0 80px rgb(116, 241, 235),
+                0 0 100px rgb(116, 241, 235);
+}
+
+.portal:nth-child(1){
+    background-color: black;
+    left: 90%;
+    animation: flotar 11s infinite linear;
+    box-shadow: 0 0 10px rgb(233, 71, 7),
+                0 0 20px rgb(194, 63, 11),
+                0 0 40px rgb(233, 192, 7),
+                0 0 60px rgb(216, 197, 25),
+                0 0 80px rgb(233, 199, 7),
+                0 0 100px rgb(247, 89, 26);
+}
+.portal:nth-child(2){
+    background-color: black;
+    left: 90%;
+    bottom: 0;
+    animation: flotar 11s infinite linear;
+    animation-direction: reverse;
+    box-shadow: 0 0 10px rgb(82, 134, 212),
+                0 0 20px rgb(42, 97, 179),
+                0 0 40px rgb(15, 50, 102),
+                0 0 60px rgb(4, 50, 117),
+                0 0 80px rgb(87, 143, 228),
+                0 0 100px rgb(4, 50, 117);
+}  
+.portal:nth-child(3){
+    background-color: black;
+    left: 0;
+    bottom: 0;
+    animation: flotar 11s infinite linear;
+    box-shadow: 0 0 10px rgb(3, 109, 21),
+                0 0 20px rgb(18, 145, 39),
+                0 0 40px rgb(42, 207, 9),
+                0 0 60px rgb(3, 197, 13),
+                0 0 80px rgb(42, 230, 17),
+                0 0 100px rgb(15, 240, 8);
+}
+@keyframes flotar {
+    from { 
+        transform: rotate(0deg) translate(-25px) rotate(0deg);
+    }
+    to { 
+        transform: rotate(360deg) translate(-25px) rotate(-360deg);
+    }
+}
+/*portal del centro*/
+/*imagen de arcana*/
+img{
+    position: absolute;
+    margin-left: -100px;
+    height: 444px;
+    width: 250px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.portalCentral {
+    position: relative;
+    border-radius: 50%;
+    height: 430px;
+    width: 15px;
+    left: 47%;
+    top: 0%;
+    animation: estar 5s infinite linear;
+    
+}
+@keyframes estar {
+    from {
+        transform: scale(0.2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes fuego {
+    0% {
+        box-shadow:
+                    0 0 60px rgb(233, 71, 7),
+                    0 0 80px rgb(194, 63, 11),
+                    0 0 100px rgb(233, 192, 7),
+                    0 0 120px rgb(216, 197, 25),
+                    0 0 1400px rgb(233, 199, 7),
+                    0 0 160px rgb(247, 89, 26);
+    }
+    100% {
+        box-shadow: 0 0 180px rgb(216, 197, 25),
+                    0 0 200px rgb(233, 199, 7),
+                    0 0 220px rgb(247, 89, 26);
+    }
+}
+
+@keyframes aire {
+    0% {
+        box-shadow: 0 0 60px rgb(116, 241, 235),
+                    0 0 80px rgb(116, 241, 235),
+                    0 0 100px rgb(116, 241, 235),
+                    0 0 120px rgb(116, 241, 235),
+                    0 0 140px rgb(116, 241, 235),
+                    0 0 160px rgb(116, 241, 235);
+    }
+    100% {
+        box-shadow: 0 0 180px rgb(116, 241, 235),
+                    0 0 200px rgb(116, 241, 235),
+                    0 0 220px rgb(116, 241, 235);
+    }
+}
+@keyframes tierra {
+    0% {
+        box-shadow: 0 0 60px rgb(3, 197, 13),
+                    0 0 80px rgb(3, 197, 13),
+                    0 0 100px rgb(3, 197, 13),
+                    0 0 120px rgb(3, 197, 13),
+                    0 0 140px rgb(3, 197, 13),
+                    0 0 160px rgb(3, 197, 13);
+    }
+    100% {
+        box-shadow: 0 0 180px rgb(3, 197, 13),
+                    0 0 200px rgb(3, 197, 13),
+                    0 0 220px rgb(3, 197, 13);
+    }
+}
+
+@keyframes agua {
+    0% {
+        box-shadow: 0 0 60px rgb(87, 143, 228),
+                    0 0 80px rgb(87, 143, 228),
+                    0 0 100px rgb(87, 143, 228),
+                    0 0 120px rgb(87, 143, 228),
+                    0 0 140px rgb(87, 143, 228),
+                    0 0 160px rgb(87, 143, 228);
+    }
+    100% {
+        box-shadow: 0 0 180px rgb(87, 143, 228),
+                    0 0 200px rgb(87, 143, 228),
+                    0 0 220px rgb(87, 143, 228);
+    }
+}

@@ -1,0 +1,361 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/espacio.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+footer {
+  color: whitesmoke;
+  font-family: 'Uncial Antiqua', cursive;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+video {
+  position: relative;
+  margin-left: 25%;
+  height: 70vh;
+  width: 100vh;
+}
+
+.fondo-fuego {
+  background-image: url("/Arcana27-04/img/fuego3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.fondo-tierra {
+  background-image: url("/Arcana27-04/img/bosque1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-trans {
+  background-color: rgba(0, 0, 0, 0.507) !important;
+  border-radius: 8px !important;
+}
+
+.fonddd {
+  background-image: url(/Arcana27-04/img/chaman2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.fondo-agua {
+  background-image: url("/Arcana27-04/img/agua.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.txt-blk {
+  color: black;
+}
+
+h1 {
+  color: whitesmoke;
+  font-family: 'Uncial Antiqua', cursive;
+}
+
+li, a, button {
+  font-family: 'Caesar Dressing', cursive;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 10%;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #0088a9;
+}
+
+.contenedor {
+  position: relative;
+  margin-top: 3%;
+  margin-left: 20%;
+  height: 70vh;
+  width: 125vh;
+  background-color: transparent;
+}
+
+.portal {
+  position: absolute;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.portal:nth-child(4) {
+  background-color: black;
+  left: 0;
+  top: 0;
+  -webkit-animation: flotar 11s infinite linear;
+          animation: flotar 11s infinite linear;
+  animation-direction: reverse;
+  -webkit-box-shadow: 0 0 10px #74f1eb, 0 0 20px #74f1eb, 0 0 40px #74f1eb, 0 0 60px #74f1eb, 0 0 80px #74f1eb, 0 0 100px #74f1eb;
+          box-shadow: 0 0 10px #74f1eb, 0 0 20px #74f1eb, 0 0 40px #74f1eb, 0 0 60px #74f1eb, 0 0 80px #74f1eb, 0 0 100px #74f1eb;
+}
+
+.portal:nth-child(1) {
+  background-color: black;
+  left: 90%;
+  -webkit-animation: flotar 11s infinite linear;
+          animation: flotar 11s infinite linear;
+  -webkit-box-shadow: 0 0 10px #e94707, 0 0 20px #c23f0b, 0 0 40px #e9c007, 0 0 60px #d8c519, 0 0 80px #e9c707, 0 0 100px #f7591a;
+          box-shadow: 0 0 10px #e94707, 0 0 20px #c23f0b, 0 0 40px #e9c007, 0 0 60px #d8c519, 0 0 80px #e9c707, 0 0 100px #f7591a;
+}
+
+.portal:nth-child(2) {
+  background-color: black;
+  left: 90%;
+  bottom: 0;
+  -webkit-animation: flotar 11s infinite linear;
+          animation: flotar 11s infinite linear;
+  animation-direction: reverse;
+  -webkit-box-shadow: 0 0 10px #5286d4, 0 0 20px #2a61b3, 0 0 40px #0f3266, 0 0 60px #043275, 0 0 80px #578fe4, 0 0 100px #043275;
+          box-shadow: 0 0 10px #5286d4, 0 0 20px #2a61b3, 0 0 40px #0f3266, 0 0 60px #043275, 0 0 80px #578fe4, 0 0 100px #043275;
+}
+
+.portal:nth-child(3) {
+  background-color: black;
+  left: 0;
+  bottom: 0;
+  -webkit-animation: flotar 11s infinite linear;
+          animation: flotar 11s infinite linear;
+  -webkit-box-shadow: 0 0 10px #036d15, 0 0 20px #129127, 0 0 40px #2acf09, 0 0 60px #03c50d, 0 0 80px #2ae611, 0 0 100px #0ff008;
+          box-shadow: 0 0 10px #036d15, 0 0 20px #129127, 0 0 40px #2acf09, 0 0 60px #03c50d, 0 0 80px #2ae611, 0 0 100px #0ff008;
+}
+
+@-webkit-keyframes flotar {
+  from {
+    -webkit-transform: rotate(0deg) translate(-25px) rotate(0deg);
+            transform: rotate(0deg) translate(-25px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(-25px) rotate(-360deg);
+            transform: rotate(360deg) translate(-25px) rotate(-360deg);
+  }
+}
+
+@keyframes flotar {
+  from {
+    -webkit-transform: rotate(0deg) translate(-25px) rotate(0deg);
+            transform: rotate(0deg) translate(-25px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(-25px) rotate(-360deg);
+            transform: rotate(360deg) translate(-25px) rotate(-360deg);
+  }
+}
+
+/*portal del centro*/
+/*imagen de arcana*/
+img {
+  position: absolute;
+  margin-left: -100px;
+  height: 444px;
+  width: 250px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.portalCentral {
+  position: relative;
+  border-radius: 50%;
+  height: 430px;
+  width: 15px;
+  left: 47%;
+  top: 0%;
+  -webkit-animation: estar 5s infinite linear;
+          animation: estar 5s infinite linear;
+}
+
+@-webkit-keyframes estar {
+  from {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes estar {
+  from {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes fuego {
+  0% {
+    -webkit-box-shadow: 0 0 60px #e94707, 0 0 80px #c23f0b, 0 0 100px #e9c007, 0 0 120px #d8c519, 0 0 1400px #e9c707, 0 0 160px #f7591a;
+            box-shadow: 0 0 60px #e94707, 0 0 80px #c23f0b, 0 0 100px #e9c007, 0 0 120px #d8c519, 0 0 1400px #e9c707, 0 0 160px #f7591a;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 180px #d8c519, 0 0 200px #e9c707, 0 0 220px #f7591a;
+            box-shadow: 0 0 180px #d8c519, 0 0 200px #e9c707, 0 0 220px #f7591a;
+  }
+}
+
+@keyframes fuego {
+  0% {
+    -webkit-box-shadow: 0 0 60px #e94707, 0 0 80px #c23f0b, 0 0 100px #e9c007, 0 0 120px #d8c519, 0 0 1400px #e9c707, 0 0 160px #f7591a;
+            box-shadow: 0 0 60px #e94707, 0 0 80px #c23f0b, 0 0 100px #e9c007, 0 0 120px #d8c519, 0 0 1400px #e9c707, 0 0 160px #f7591a;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 180px #d8c519, 0 0 200px #e9c707, 0 0 220px #f7591a;
+            box-shadow: 0 0 180px #d8c519, 0 0 200px #e9c707, 0 0 220px #f7591a;
+  }
+}
+
+@-webkit-keyframes aire {
+  0% {
+    -webkit-box-shadow: 0 0 60px #74f1eb, 0 0 80px #74f1eb, 0 0 100px #74f1eb, 0 0 120px #74f1eb, 0 0 140px #74f1eb, 0 0 160px #74f1eb;
+            box-shadow: 0 0 60px #74f1eb, 0 0 80px #74f1eb, 0 0 100px #74f1eb, 0 0 120px #74f1eb, 0 0 140px #74f1eb, 0 0 160px #74f1eb;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 180px #74f1eb, 0 0 200px #74f1eb, 0 0 220px #74f1eb;
+            box-shadow: 0 0 180px #74f1eb, 0 0 200px #74f1eb, 0 0 220px #74f1eb;
+  }
+}
+
+@keyframes aire {
+  0% {
+    -webkit-box-shadow: 0 0 60px #74f1eb, 0 0 80px #74f1eb, 0 0 100px #74f1eb, 0 0 120px #74f1eb, 0 0 140px #74f1eb, 0 0 160px #74f1eb;
+            box-shadow: 0 0 60px #74f1eb, 0 0 80px #74f1eb, 0 0 100px #74f1eb, 0 0 120px #74f1eb, 0 0 140px #74f1eb, 0 0 160px #74f1eb;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 180px #74f1eb, 0 0 200px #74f1eb, 0 0 220px #74f1eb;
+            box-shadow: 0 0 180px #74f1eb, 0 0 200px #74f1eb, 0 0 220px #74f1eb;
+  }
+}
+
+@-webkit-keyframes tierra {
+  0% {
+    -webkit-box-shadow: 0 0 60px #03c50d, 0 0 80px #03c50d, 0 0 100px #03c50d, 0 0 120px #03c50d, 0 0 140px #03c50d, 0 0 160px #03c50d;
+            box-shadow: 0 0 60px #03c50d, 0 0 80px #03c50d, 0 0 100px #03c50d, 0 0 120px #03c50d, 0 0 140px #03c50d, 0 0 160px #03c50d;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 180px #03c50d, 0 0 200px #03c50d, 0 0 220px #03c50d;
+            box-shadow: 0 0 180px #03c50d, 0 0 200px #03c50d, 0 0 220px #03c50d;
+  }
+}
+
+@keyframes tierra {
+  0% {
+    -webkit-box-shadow: 0 0 60px #03c50d, 0 0 80px #03c50d, 0 0 100px #03c50d, 0 0 120px #03c50d, 0 0 140px #03c50d, 0 0 160px #03c50d;
+            box-shadow: 0 0 60px #03c50d, 0 0 80px #03c50d, 0 0 100px #03c50d, 0 0 120px #03c50d, 0 0 140px #03c50d, 0 0 160px #03c50d;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 180px #03c50d, 0 0 200px #03c50d, 0 0 220px #03c50d;
+            box-shadow: 0 0 180px #03c50d, 0 0 200px #03c50d, 0 0 220px #03c50d;
+  }
+}
+
+@-webkit-keyframes agua {
+  0% {
+    -webkit-box-shadow: 0 0 60px #578fe4, 0 0 80px #578fe4, 0 0 100px #578fe4, 0 0 120px #578fe4, 0 0 140px #578fe4, 0 0 160px #578fe4;
+            box-shadow: 0 0 60px #578fe4, 0 0 80px #578fe4, 0 0 100px #578fe4, 0 0 120px #578fe4, 0 0 140px #578fe4, 0 0 160px #578fe4;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 180px #578fe4, 0 0 200px #578fe4, 0 0 220px #578fe4;
+            box-shadow: 0 0 180px #578fe4, 0 0 200px #578fe4, 0 0 220px #578fe4;
+  }
+}
+
+@keyframes agua {
+  0% {
+    -webkit-box-shadow: 0 0 60px #578fe4, 0 0 80px #578fe4, 0 0 100px #578fe4, 0 0 120px #578fe4, 0 0 140px #578fe4, 0 0 160px #578fe4;
+            box-shadow: 0 0 60px #578fe4, 0 0 80px #578fe4, 0 0 100px #578fe4, 0 0 120px #578fe4, 0 0 140px #578fe4, 0 0 160px #578fe4;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 180px #578fe4, 0 0 200px #578fe4, 0 0 220px #578fe4;
+            box-shadow: 0 0 180px #578fe4, 0 0 200px #578fe4, 0 0 220px #578fe4;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /*background-color: #24252a;*/
+}
+
+.form_card {
+  background: rgba(0, 0, 0, 0.274);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 10px;
+  border: 2px solid rgba(228, 109, 12, 0.527);
+  padding: 30px;
+  color: white;
+}
+
+.btn-tamaño {
+  width: 30% !important;
+  background-color: #fe6a18;
+  border: black;
+}
+
+.form-signin {
+  padding-top: 130px;
+}
+/*# sourceMappingURL=main.css.map */
