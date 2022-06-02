@@ -1,7 +1,12 @@
 @charset "UTF-8";
+@import url(./_responsive.scss);
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Poppins:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap");
+@import url(./_responsive.scss);
+@import url(./_responsive.scss);
+@import url(./_responsive.scss);
+@import url(/_responsive.scss);
 body {
   margin: 0;
   padding: 0;
@@ -29,7 +34,7 @@ video {
 }
 
 .fondo-fuego {
-  background-image: url("/Arcana27-04/img/fuego3.jpg");
+  background-image: url("/Arcana27-04/img/pexels-adesh-seethala-6698193.gif");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -67,6 +72,18 @@ video {
   color: black;
 }
 
+.card {
+  margin: 6px;
+  background: #073f504f;
+  color: black;
+  -webkit-box-shadow: 0 8px 32px 0 rgba(19, 20, 20, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(19, 20, 20, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 7px;
+  border: 1px solid rgba(5, 5, 5, 0.18);
+}
+
 h1 {
   color: whitesmoke;
   font-family: 'Uncial Antiqua', cursive;
@@ -92,6 +109,10 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 10%;
+  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .logo {
@@ -135,8 +156,11 @@ header {
 }
 
 .portal:nth-child(4) {
-  background-color: black;
+  background-image: url("/Arcana27-04/img/ArcanaDiseño405_Moment1_Moment5.png");
   left: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   top: 0;
   -webkit-animation: flotar 11s infinite linear;
           animation: flotar 11s infinite linear;
@@ -146,7 +170,10 @@ header {
 }
 
 .portal:nth-child(1) {
-  background-color: black;
+  background-image: url("/Arcana27-04/img/WhatsApp Image 2022-05-12 at 3.20.55 PM.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   left: 90%;
   -webkit-animation: flotar 11s infinite linear;
           animation: flotar 11s infinite linear;
@@ -155,9 +182,12 @@ header {
 }
 
 .portal:nth-child(2) {
-  background-color: black;
+  background-image: url("/Arcana27-04/img/WhatsApp Image 2022-05-12 at 3.20.55 PM.jpeg");
   left: 90%;
   bottom: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   -webkit-animation: flotar 11s infinite linear;
           animation: flotar 11s infinite linear;
   animation-direction: reverse;
@@ -166,9 +196,12 @@ header {
 }
 
 .portal:nth-child(3) {
-  background-color: black;
+  background-image: url("/Arcana27-04/img/pexels-adesh-seethala-6698193.gif");
   left: 0;
   bottom: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   -webkit-animation: flotar 11s infinite linear;
           animation: flotar 11s infinite linear;
   -webkit-box-shadow: 0 0 10px #036d15, 0 0 20px #129127, 0 0 40px #2acf09, 0 0 60px #03c50d, 0 0 80px #2ae611, 0 0 100px #0ff008;
@@ -199,11 +232,11 @@ header {
 
 /*portal del centro*/
 /*imagen de arcana*/
-img {
+.logo2 {
   position: absolute;
-  margin-left: -100px;
-  height: 444px;
-  width: 250px;
+  margin-left: -224px;
+  height: 470px;
+  width: 470px;
   background-color: transparent;
   cursor: pointer;
 }
@@ -329,6 +362,35 @@ img {
   }
 }
 
+.logo4 {
+  width: 182px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -347,6 +409,17 @@ img {
   border: 2px solid rgba(228, 109, 12, 0.527);
   padding: 30px;
   color: white;
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .form_card {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15px;
+  }
 }
 
 .btn-tamaño {
@@ -356,6 +429,80 @@ img {
 }
 
 .form-signin {
-  padding-top: 130px;
+  padding-top: 44px;
+}
+
+@media screen and (max-width: 768px) {
+  .fix1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .fix2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fix {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fix3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .fix3 {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fix4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */

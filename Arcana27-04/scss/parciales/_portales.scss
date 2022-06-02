@@ -1,3 +1,4 @@
+@import url(./_responsive.scss);
 .contenedor {
     position: relative;
     margin-top: 3%;
@@ -15,8 +16,11 @@
     cursor: pointer;
 }
 .portal:nth-child(4){
-    background-color: black;
+    background-image: url("/Arcana27-04/img/ArcanaDiseño405_Moment1_Moment5.png");
     left: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     top: 0;
     animation: flotar 11s infinite linear;
     animation-direction: reverse;
@@ -29,7 +33,10 @@
 }
 
 .portal:nth-child(1){
-    background-color: black;
+    background-image: url("/Arcana27-04/img/WhatsApp\ Image\ 2022-05-12\ at\ 3.20.55\ PM.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     left: 90%;
     animation: flotar 11s infinite linear;
     box-shadow: 0 0 10px rgb(233, 71, 7),
@@ -40,9 +47,12 @@
                 0 0 100px rgb(247, 89, 26);
 }
 .portal:nth-child(2){
-    background-color: black;
+    background-image: url("/Arcana27-04/img/WhatsApp\ Image\ 2022-05-12\ at\ 3.20.55\ PM.jpeg");
     left: 90%;
     bottom: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     animation: flotar 11s infinite linear;
     animation-direction: reverse;
     box-shadow: 0 0 10px rgb(82, 134, 212),
@@ -53,9 +63,12 @@
                 0 0 100px rgb(4, 50, 117);
 }  
 .portal:nth-child(3){
-    background-color: black;
+    background-image: url("/Arcana27-04/img/pexels-adesh-seethala-6698193.gif");
     left: 0;
     bottom: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     animation: flotar 11s infinite linear;
     box-shadow: 0 0 10px rgb(3, 109, 21),
                 0 0 20px rgb(18, 145, 39),
@@ -74,11 +87,11 @@
 }
 /*portal del centro*/
 /*imagen de arcana*/
-img{
+.logo2{
     position: absolute;
-    margin-left: -100px;
-    height: 444px;
-    width: 250px;
+    margin-left: -224px;
+    height: 470px;
+    width: 470px;
     background-color: transparent;
     cursor: pointer;
 }
@@ -163,4 +176,19 @@ img{
                     0 0 200px rgb(87, 143, 228),
                     0 0 220px rgb(87, 143, 228);
     }
+}
+
+.logo4{
+    width: 182px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.logo{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
 }

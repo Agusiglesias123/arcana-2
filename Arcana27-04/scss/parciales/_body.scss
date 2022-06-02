@@ -1,3 +1,4 @@
+@import url(./_responsive.scss);
 body{
     margin: 0;
     padding: 0;
@@ -21,7 +22,7 @@ video{
 }
 
 .fondo-fuego{
-    background-image: url('/Arcana27-04/img/fuego3.jpg');
+    background-image: url('/Arcana27-04/img/pexels-adesh-seethala-6698193.gif');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -55,4 +56,15 @@ video{
 
 .txt-blk{
     color: black;
+}
+
+.card{
+    margin: 6px;
+    background: #073f504f;
+    color: black;
+box-shadow: 0 8px 32px 0 rgba(19, 20, 20, 0.37);
+backdrop-filter: blur( 2.5px );
+-webkit-backdrop-filter: blur( 2.5px );
+border-radius: 7px;
+border: 1px solid rgba(5, 5, 5, 0.18);
 }
