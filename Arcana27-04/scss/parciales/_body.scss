@@ -35,16 +35,28 @@ video{
     background-size: cover;
 }
 
+.fondo-aire{
+    background-image: url('/Arcana27-04/img/aire.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
 .hero-trans{
     background-color: rgba(0, 0, 0, 0.507) !important;
     border-radius: 8px !important;
 }
 
 .fonddd{
-    background-image: url(/Arcana27-04/img/chaman2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+   background-color: rgba(15, 26, 9, 0.445);
+   border: 1px solid rgba(41, 104, 4, 0.39) !important;
+   box-shadow: 0 8px 32px 0 rgba(53, 78, 53, 0.301) !important;
+}
+.fonddd:hover{
+    background-color: rgba(5, 5, 5, 0.651);
+    transition: 0.5s;
+
 }
 .fondo-agua{
     background-image: url('/Arcana27-04/img/agua.jpg');

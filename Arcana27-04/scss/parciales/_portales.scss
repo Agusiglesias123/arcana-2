@@ -4,8 +4,11 @@
     margin-top: 3%;
     margin-left: 20%;
     height: 70vh;
-    width: 125vh;   
     background-color: transparent;
+    @include tablet{
+        overflow: hidden;
+    }
+
 }
 
 .portal {
@@ -16,12 +19,13 @@
     cursor: pointer;
 }
 .portal:nth-child(4){
-    background-image: url("/Arcana27-04/img/ArcanaDiseño405_Moment1_Moment5.png");
+    background-image: url("/Arcana27-04/img/portalAire.jpg");
     left: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    top: 0;
+    top: 13px;
+    left: -41px;
     animation: flotar 11s infinite linear;
     animation-direction: reverse;
     box-shadow: 0 0 10px rgb(116, 241, 235),
@@ -30,14 +34,28 @@
                 0 0 60px rgb(116, 241, 235),
                 0 0 80px rgb(116, 241, 235),
                 0 0 100px rgb(116, 241, 235);
+                position: fixed;
+    @include cel1{
+        top: 182px;
+        left: 27px;
+    }
+    @include cel2{
+        top: 168px;
+        left: 34px;
+    }
+    @include cel3{
+        top: 170px;
+        left: 34px;
+    }
 }
 
 .portal:nth-child(1){
-    background-image: url("/Arcana27-04/img/WhatsApp\ Image\ 2022-05-12\ at\ 3.20.55\ PM.jpeg");
+    background-image: url("/Arcana27-04/img/fuego3.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     left: 90%;
+    top: 11px;
     animation: flotar 11s infinite linear;
     box-shadow: 0 0 10px rgb(233, 71, 7),
                 0 0 20px rgb(194, 63, 11),
@@ -45,9 +63,23 @@
                 0 0 60px rgb(216, 197, 25),
                 0 0 80px rgb(233, 199, 7),
                 0 0 100px rgb(247, 89, 26);
+                position: fixed;
+    @include cel1{
+        left: 214px;
+        top: 182px;
+    }
+    @include cel2{
+        left: 265px;
+        top: 169px;
+    }
+    @include cel3{
+        left: 308px;
+        top: 170px;
+    }
+                
 }
 .portal:nth-child(2){
-    background-image: url("/Arcana27-04/img/WhatsApp\ Image\ 2022-05-12\ at\ 3.20.55\ PM.jpeg");
+    background-image: url("/Arcana27-04/img/agua.jpg");
     left: 90%;
     bottom: 0;
     background-repeat: no-repeat;
@@ -61,11 +93,24 @@
                 0 0 60px rgb(4, 50, 117),
                 0 0 80px rgb(87, 143, 228),
                 0 0 100px rgb(4, 50, 117);
+                position: fixed;
+    @include cel1{
+        left: 219px;
+        bottom: 130px;
+    }
+    @include cel2{
+        left: 263px;
+        bottom: 170px;
+    }
+    @include cel3{
+        left: 308px;
+        bottom: 170px;
+    }
 }  
 .portal:nth-child(3){
-    background-image: url("/Arcana27-04/img/pexels-adesh-seethala-6698193.gif");
-    left: 0;
-    bottom: 0;
+    background-image: url("/Arcana27-04/img/bosque1.jpg");
+    left: -39px;
+    bottom: 14px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -76,6 +121,19 @@
                 0 0 60px rgb(3, 197, 13),
                 0 0 80px rgb(42, 230, 17),
                 0 0 100px rgb(15, 240, 8);
+                position: fixed;
+    @include cel1{
+        left: 31px;
+        bottom: 130px;
+    }
+    @include cel2{
+        left: 46px;
+        bottom: 170px;
+    }
+    @include cel3{
+        left: 36px;
+        bottom: 170px;
+    }
 }
 @keyframes flotar {
     from { 
@@ -94,6 +152,18 @@
     width: 470px;
     background-color: transparent;
     cursor: pointer;
+    @include cel1{
+        height: 339px;
+        top: -42px;
+        left: 62px;
+        width: 351px;
+        
+    }
+    @include cel2{
+        margin-left: -180px;
+        height: 369px;
+        width: 386px;
+    }
 }
 .portalCentral {
     position: relative;
@@ -103,6 +173,25 @@
     left: 47%;
     top: 0%;
     animation: estar 5s infinite linear;
+    @include cel1{
+        position: fixed;
+        border-radius: 50%;
+        height: 267px;
+        width: 21px;
+        left: 149px;
+        top: 314px;
+    }
+    @include cel2{
+    border-radius: 50%;
+    position: fixed;
+    height: 318px;
+    width: 23px;
+    left: 179px;
+    top: 254px;
+    }
+    @include cel3{
+        left: 207px;
+    }
     
 }
 @keyframes estar {
